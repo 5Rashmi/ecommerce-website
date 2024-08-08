@@ -1,7 +1,7 @@
 # $\color{Bittersweet}{BuyHive}$
 
 > [!NOTE]
-> Essential details that users should not overlook, even when browsing quickly.
+> I am working on this project.
 
 ## License
 
