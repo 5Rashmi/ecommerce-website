@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply m-0 p-0 box-border;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+header{
+    @apply absolute top-0 left-0 w-full flex justify-between align-middle bg-indigo-800 text-white;
+    padding: 15px 100px;
+    z-index: 10;
+}
+.logo{
+    @apply relative text-2xl text-white;
+    text-decoration: none;
+    font-weight: 600;
+}
+header .navigation{
+    @apply flex justify-center flex-wrap;
+    margin: 10px 0;
+}
+header .navigation li{
+    @apply list-none;
+    margin: 0 10px;
+}
+header .navigation li a{
+    @apply text-white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
