@@ -59,7 +59,7 @@ header .navigation li a{
 }
 header .search{
     position: relative;
-    width: 10rem;
+    width: 12rem;
     height: 2rem;
 }
 header .search input{
