@@ -1,0 +1,127 @@
+
+/* color palettes: #921A40, #C75B7A, #D9ABAB, #F4D9D0 */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    background: var(--clr);
+}
+:root{
+    --clr: #F4D9D0;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 86.1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #921A40;
+    color: #F4D9D0;
+    padding: 15px 100px;
+    z-index: 100000;
+    border-radius: 40px 0 40px 0;
+}
+.logo{
+    position: relative;
+    font-size: 27px;
+    color: #F4D9D0;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo .fa-shopping-bag{
+    padding-right: 8px;
+    color: #F4D9D0;
+}
+header .navigation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+header .navigation li{
+    list-style: none;
+    margin: 0 10px;
+}
+header .navigation li a{
+    position: relative;
+    color: #F4D9D0;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+header .search{
+    position: relative;
+    width: 10rem;
+    height: 2rem;
+}
+header .search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #F4D9D0;
+    outline: none;
+    border: 1px solid #F4D9D0;
+    border-radius: 20px;
+    padding: 0 10px 0 55px;
+}
+header .search input::placeholder{
+    color: #D9ABAB;
+    padding-left: 3px
+}
+header .search .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #F4D9D0;
+    border-right: 1px solid #F4D9D0;
+    padding: 0 10px;
+}
+header .fa-bars{
+    padding-left: 20px;
+    font-size: 30px;
+    color: #F4D9D0;
+}
+header .navigation #indicator{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 20px;
+    height: 64px;
+    background: var(--clr);
+    border-radius: 20px 20px 0 0;
+    transition: 0.5s;
+}
+header .navigation #indicator::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0 5px var(--clr);
+}
+header .navigation #indicator::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    box-shadow: -5px 5px 0 5px var(--clr);
+}
