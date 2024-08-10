@@ -13,7 +13,7 @@
     flex: 0 0 320px;
     width: 320px;
     height: 450px;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(99, 93, 93, 0.479);
     overflow: hidden;
     z-index: 10;
     backdrop-filter: blur(15px);
@@ -101,6 +101,9 @@
     padding: 6px;
     margin-left: 30%;
 }
+.cardContainer .card .cardContentBx .dealsDiscountAmt .discPercent:hover, .dealsDiscountAmt h4:hover{
+    transform: scale(1.2);
+}
 .cardContainer .card .cardContentBx .dealsDiscountAmt h4{
     margin: 4% 0;
 }
@@ -114,11 +117,40 @@
     display: flex;
     margin-top: 2%;
     margin-left: 33%;
-    background-color: #C75B7A;
+    border: 1px solid #C75B7A;
+    background-color: none;
     padding: 3%;
     text-decoration: none;
-    color: white;
+    color: #921A40;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
+.cardContainer .card .cardContentBx a::before{
+    background-color: #C75B7A;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: bottom left;
+    transition: 1s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+.cardContainer .card .cardContentBx a:hover::before{
+    transform: translate(0, 0);
+}
+.cardContainer .card .cardContentBx a:hover{
+    border: none;
+    color: white;
+    transform: scale(1.2);
+}
+
 .dealsBtns{
     position: absolute;
     display: flex;
