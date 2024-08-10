@@ -13,7 +13,7 @@ body{
     background: var(--clr);
 }
 :root{
-    --clr: #F4D9D0;
+    --clr: white;
 }
 header{
     position: absolute;
