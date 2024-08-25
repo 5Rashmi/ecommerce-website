@@ -1,0 +1,69 @@
+
+/* color palettes: #921A40, #C75B7A, #D9ABAB, #F4D9D0 */
+
+footer{
+    position: relative;
+    width: 86.1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #921A40;
+    color: #F4D9D0;
+    padding: 0 100px;
+    z-index: 100000;
+    border-radius: 40px 0 40px 0;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+footer h6{
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+footer p{
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+footer p:hover{
+    color: #f9c4b2;
+    scale: 1.1;
+    cursor: pointer;
+}
+div ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+div ul li{
+    margin: 0 10px;
+}
+div ul li a{
+    color: white;
+    text-decoration: none;
+}
+.fa-facebook:hover{
+    color: #1877F2;
+    transform: scale(1.6);
+}
+.fa-instagram:hover{
+    color: #d62976;
+    transform: scale(1.6);
+}
+.fa-twitter:hover{
+    color:  #1DA1F2;
+    transform: scale(1.6);
+}
+.copyContent {
+    margin-top: 30px;
+    text-align: center;
+}
