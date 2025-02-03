@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: ecommerce-website
+    env: static
+    buildCommand: ''
+    publishDirectory: /BuyHive
+    staticPublishPath: /BuyHive
+    route:
+      source: /
+      target: /index.html
